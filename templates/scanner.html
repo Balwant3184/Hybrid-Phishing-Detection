@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4 class="mb-3">URL Scanner</h4>
+
+<div class="card shadow-sm p-4">
+
+    <input type="text" id="urlInput"
+       class="form-control scan-input mb-3"
+       placeholder="🔍 Enter URL (e.g., https://example.com)">
+
+    <button onclick="scanURL()" class="btn w-100 scan-btn">
+     Scan URL
+    </button>
+
+
+    <div id="results" class="mt-4" style="display:none;">
+
+        <hr>
+
+        <h5>Prediction Result</h5>
+        <p><strong>Status:</strong> <span id="prediction"></span></p>
+        <p><strong>Risk Score (ML):</strong> <span id="riskScore"></span>%</p>
+        <p><strong>LSTM Score:</strong> <span id="lstmScore"></span>%</p>
+        <p><strong>Hybrid Threat Score:</strong> 
+            <span id="hybridScore" class="fw-bold"></span>%</p>
+
+        <!-- Threat Meter -->
+        <h6 class="mt-4">Threat Meter</h6>
+        <canvas id="riskGauge"></canvas>
+
+        <!-- Progress Bar -->
+        <div class="progress mt-3">
+            <div id="riskBar" class="progress-bar"
+                 role="progressbar"
+                 style="width: 0%">0%</div>
+        </div>
+
+        <!-- BPSO -->
+        
+        
+        <h6 class="mt-4">🧬 BPSO Optimized Features Used</h6>
+        <div id="bpsoFeatures" class="border p-2 rounded bg-light small"></div>
+
+        <!-- Threat Intelligence -->
+        <h6 class="mt-4">Threat Intelligence</h6>
+        <p><strong>SSL Status:</strong> <span id="sslStatus"></span></p>
+        <p><strong>Domain Age:</strong> <span id="domainAge"></span></p>
+        <p><strong>VirusTotal:</strong> <span id="virusTotal"></span></p>
+        <p><strong>Google Safe Browsing:</strong> <span id="googleSafe"></span></p>
+
+    </div>
+
+</div>
+
+{% endblock %}

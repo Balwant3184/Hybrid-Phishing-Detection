@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<div class="hero-section text-center p-5 mb-5 shadow-sm">
+    <h1 class="hero-title">🛡 Scan a URL</h1>
+    <p class="hero-subtitle">
+        Analyze any URL for phishing threats using Hybrid Ensemble Framework
+    </p>
+    <a href="/scanner" class="btn hero-btn mt-3">
+        Start Scanning →
+    </a>
+</div>
+
+
+
+
+<!-- FRAMEWORK SECTION -->
+<h4 class="mt-3 text-center fw-bold">Framework Components</h4>
+
+<div class="row g-4 mt-3 text-center">
+
+    <div class="col-md-4">
+        <div class="component-box lstm">
+            <h5>LSTM</h5>
+            <small>URL Sequence Analysis</small>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="component-box cnn">
+            <h5>CNN</h5>
+            <small>Pattern Detection</small>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="component-box rf">
+            <h5>RF</h5>
+            <small>Random Forest</small>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="component-box pso">
+            <h5>BPSO</h5>
+            <small>Bio-inspired Selection</small>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="component-box svm">
+            <h5>SVM</h5>
+            <small>Support Vector Machine</small>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="component-box ensemble">
+            <h5>Ensemble</h5>
+            <small>Hybrid Framework</small>
+        </div>
+        </div>
+
+</div>
+
+{% endblock %}

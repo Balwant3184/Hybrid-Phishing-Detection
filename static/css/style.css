@@ -1,0 +1,273 @@
+/* ============================= */
+/* GLOBAL STYLING */
+/* ============================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #212529;
+}
+
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero-section {
+    background: linear-gradient(135deg, #1e66f5, #0d47a1);
+    color: white;
+    border-radius: 20px;
+    padding: 50px 20px;
+}
+
+.hero-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    background: white;
+    color: #0d47a1;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+}
+
+.hero-btn:hover {
+    background: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/* STAT CARDS */
+/* ============================= */
+
+.stat-card {
+    padding: 25px;
+    border-radius: 18px;
+    background: white;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h2 {
+    font-weight: 700;
+}
+
+.stat-card.legit { background: #d4edda; }
+.stat-card.phishing { background: #f8d7da; }
+
+
+/* ============================= */
+/* FRAMEWORK COMPONENTS */
+/* ============================= */
+
+.framework-section {
+    margin-top: 60px;
+}
+
+.framework-section h3 {
+    font-weight: 700;
+}
+
+.component-box {
+    padding: 25px;
+    border-radius: 18px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.component-box:hover {
+    transform: translateY(-5px);
+}
+
+.component-box h5 {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.component-box p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Component Colors */
+.lstm { background:#e3e0f7; }
+.cnn { background:#dce6f2; }
+.rf { background:#d4edda; }
+.pso { background:#fff3cd; }
+.svm { background:#cfe2ff; }
+.ensemble { background:#f8d7da; }
+
+
+/* ============================= */
+/* SCANNER PAGE */
+/* ============================= */
+
+.scan-card,
+.result-card {
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* ===== Scanner Input ===== */
+
+.scan-input {
+    border-radius: 40px !important;
+    padding: 14px 20px;
+    font-size: 15px;
+    border: 1px solid #dcdcdc;
+    transition: 0.3s;
+}
+
+.scan-input:focus {
+    border-color: #1e66f5;
+    box-shadow: 0 0 0 0.2rem rgba(30,102,245,0.15);
+}
+
+/* ===== Scanner Buttons ===== */
+
+.scan-btn,
+.scan-btn-dark {
+    border-radius: 40px !important;
+    padding: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+}
+
+.scan-btn {
+    background: linear-gradient(135deg, #1e66f5, #0d47a1);
+    color: white;
+}
+
+.scan-btn-dark {
+    background: #212529;
+    color: white;
+}
+
+.scan-btn:hover,
+.scan-btn-dark:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+
+/* ============================= */
+/* CHART SIZE CONTROL */
+/* ============================= */
+
+/* Gauge */
+#riskGauge {
+    max-width: 220px !important;
+    max-height: 220px !important;
+    margin: 20px auto;
+}
+
+/* Feature Chart */
+#featureChart {
+    max-height: 250px !important;
+}
+
+/* Pie Chart */
+#layerPie {
+    max-width: 240px !important;
+    max-height: 240px !important;
+    margin: 20px auto;
+}
+
+/* Canvas Center */
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Section spacing */
+#results h6 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+
+/* ============================= */
+/* PROGRESS BAR */
+/* ============================= */
+
+.progress {
+    height: 14px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.8s ease-in-out;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+/* ============================= */
+/* ADVERSARIAL SECTION */
+/* ============================= */
+
+#adversarialResults table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#adversarialResults h5 {
+    font-weight: 700;
+}
+
+#adversarialResults .badge {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+#adversarialResults tr:hover {
+    background-color: #f8f9fa;
+    transition: 0.2s;
+}
+
+
+/* ============================= */
+/* RESPONSIVE FIX */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    #riskGauge {
+        max-width: 180px !important;
+        max-height: 180px !important;
+    }
+
+    #layerPie {
+        max-width: 200px !important;
+        max-height: 200px !important;
+    }
+
+    #featureChart {
+        max-height: 220px !important;
+    }
+}
